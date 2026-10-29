@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Student Marks Calculator</h1>
+        <p>Enter your marks to calculate your result.</p>
+        <form id="marksForm">
+            <label for="studentName">Student Name</label>
+            <input id="studentName" type="text" placeholder="Enter name" required>
+            <label for="mark1">Subject 1 (out of 100)</label>
+            <input id="mark1" type="number" min="0" max="100" required>
+            <label for="mark2">Subject 2 (out of 100)</label>
+            <input id="mark2" type="number" min="0" max="100" required>
+            <label for="mark3">Subject 3 (out of 100)</label>
+            <input id="mark3" type="number" min="0" max="100" required>
+            <button type="submit">Calculate Result</button>
+        </form>
+        <section id="result" aria-live="polite" hidden></section>
+    </main>
+</body>
+</html>
